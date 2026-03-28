@@ -1,0 +1,23 @@
+.DS_Store
+**/.DS_Store
+
+# Node
+**/node_modules/
+npm-debug.log*
+
+# PlatformIO / embedded build
+**/.pio/
+**/.vscode/.browse.c_cpp.db*
+
+# Xcode
+**/xcuserdata/
+**/*.xcuserstate
+**/DerivedData/
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# Secrets (if you add later)
+.env
+*.pem

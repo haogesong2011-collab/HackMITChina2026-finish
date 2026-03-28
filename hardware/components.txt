@@ -1,0 +1,8 @@
+ESP32-C3 x2
+LD2451 mmWave Radar x1
+Flexible LCD Lens with UV sensor x1
+Battery x2
+LED Strip (red) x2
+LED Strip (blue) x2
+3D printing materials
+Type-C charging module x2

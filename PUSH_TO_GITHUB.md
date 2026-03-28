@@ -14,9 +14,11 @@
 
 把 `你的用户名` 换成你的 GitHub 用户名：
 
+当前协作仓库：**[haogesong2011-collab/HackMITChina2026-finish](https://github.com/haogesong2011-collab/HackMITChina2026-finish)**
+
 ```bash
 cd "/Users/a11/Documents/HackMITChina2026 finish"
-git remote set-url origin "https://github.com/你的用户名/HackMITChina2026-finish.git"
+git remote set-url origin "https://github.com/haogesong2011-collab/HackMITChina2026-finish.git"
 ```
 
 若仓库名不是 `HackMITChina2026-finish`，把 URL 里最后一段改成你的仓库名。
@@ -26,8 +28,11 @@ git remote set-url origin "https://github.com/你的用户名/HackMITChina2026-f
 请使用**未被 shell 改写的 git**（若遇 `trailer` 报错，用 `command git`）：
 
 ```bash
+git config http.postBuffer 524288000
 command git push -u origin main --force
 ```
+
+若出现 `HTTP 400` / `RPC failed`，多半是推送体积或缓冲问题，可先执行上面的 `http.postBuffer` 再推。
 
 首次 HTTPS 推送会提示登录：可用 **Personal Access Token**（经典 token 需勾选 `repo`）作为密码。
 
@@ -42,4 +47,4 @@ command git push -u origin main --force
 
 ---
 
-**说明：** 曾尝试的远程 `https://github.com/syh/HackMITChina2026-finish.git` 返回「仓库不存在」，因此需要你按上面改成**自己的用户名与仓库名**后再推送。
+**说明：** 组织账号 `haogesong2011-collab` 下仓库已对接；其他机器克隆请用该 URL。
